@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./CourseResults.css";
 import CourseTransfer from "./CourseTransfer";
+import APIURL from "../../helpers/enviroment";
 
 class CourseResults extends Component {
     constructor(props) {
@@ -17,7 +18,7 @@ class CourseResults extends Component {
 
     transferCourse = (event, usercourse) => {
         event.preventDefault();
-        fetch("http://localhost:3000/usercourses/create", {
+        fetch(`${APIURL}/usercourses/create`, {
             method: "POST",
             body: JSON.stringify({ usercourse: usercourse }),
             headers: new Headers({

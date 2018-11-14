@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import CourseTable from "./CourseTable";
 import CourseEdit from "./CourseEdit";
+import APIURL from "../../helpers/enviroment";
 
 export default class UserCourses extends Component {
     constructor(props) {
@@ -17,7 +18,7 @@ export default class UserCourses extends Component {
     }
 
     fetchUserCourses = () => {
-        fetch("http://localhost:3000/usercourses/get", {
+        fetch(`${APIURL}/usercourses/get`, {
             method: "GET",
             headers: new Headers({
                 "Content-Type": "application/json",
@@ -31,7 +32,7 @@ export default class UserCourses extends Component {
     }
 
     userCourseDelete = (event) => {
-        fetch(`http://localhost:3000/usercourses/delete/${event.target.id}`, {
+        fetch(`${APIURL}/usercourses/delete/${event.target.id}`, {
             method: "DELETE",
             body: JSON.stringify({ course: { id: event.target.id } }),
             headers: new Headers({
@@ -43,7 +44,7 @@ export default class UserCourses extends Component {
     }
 
     coursesUpdate = (event, usercourse) => {
-        fetch(`http://localhost:3000/usercourses/update/${usercourse.id}`, {
+        fetch(`${APIURL}/usercourses/update/${usercourse.id}`, {
             method: 'PUT',
             body: JSON.stringify({ usercourse: usercourse }),
             headers: new Headers({

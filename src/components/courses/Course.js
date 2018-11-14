@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Container, Row, Col, Form, FormGroup, Input } from "reactstrap";
 import CourseResults from "./CourseResults";
 import "./Course.css";
+import APIURL from "../../helpers/enviroment";
 
 export default class Course extends Component {
     constructor(props) {
@@ -38,7 +39,7 @@ export default class Course extends Component {
     }
 
     fetchCourses = () => {
-        fetch("http://localhost:3000/courses/get", {
+        fetch(`${APIURL}/courses/get`, {
             method: "GET",
             headers: new Headers({
                 "Content-Type": "application/json",

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Form, FormGroup, Input, Modal, ModalBody, ModalHeader } from "reactstrap";
+import APIURL from "../../helpers/enviroment";
 
 export default class CourseCreate extends Component {
     constructor(props) {
@@ -19,7 +20,7 @@ export default class CourseCreate extends Component {
     }
 
     handleSubmit = (event) => {
-        fetch("http://localhost:3000/usercourses/create", {
+        fetch(`${APIURL}/usercourses/create`, {
             method: "POST",
             body: JSON.stringify({ usercourse: this.state }),
             headers: new Headers({
