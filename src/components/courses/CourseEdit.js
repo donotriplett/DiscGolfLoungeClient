@@ -68,9 +68,7 @@ class CourseEdit extends Component {
                             <Button type="submit" color="primary"> Submit </Button>
                         </Form>
                     </ModalBody>
-
                 </Modal>
-
             </div>
         )
     }

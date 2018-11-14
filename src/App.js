@@ -51,7 +51,7 @@ export default class App extends Component {
     return (
       <Router>
         <div>
-          <NavBar clickLogout={this.logout} />
+          <NavBar token={this.state.sessionToken} clickLogout={this.logout} />
           {this.protectedViews()}
         </div>
       </Router>

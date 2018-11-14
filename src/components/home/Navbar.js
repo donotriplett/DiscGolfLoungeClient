@@ -25,7 +25,7 @@ export default class Sitebar extends Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <Button id="logout" onClick={() => this.props.clickLogout()}>Logout</Button>
+                                {localStorage.getItem("token") !== null || undefined ? <Button id="logout" onClick={() => this.props.clickLogout()}>Logout</Button> : ""}
                             </NavItem>
                         </Nav>
                     </Collapse>
