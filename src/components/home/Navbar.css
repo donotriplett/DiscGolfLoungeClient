@@ -1,0 +1,20 @@
+#navbar {
+    background-color: green;
+}
+
+#navbarheader {
+    color: silver;
+}
+
+#navbarheader:hover {
+    color: black;
+}
+
+#logout {
+    color: green;
+    background-color: silver;
+}
+
+#logout:hover {
+    background-color: black;
+} 

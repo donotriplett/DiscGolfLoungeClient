@@ -1,0 +1,13 @@
+#add-course {
+    margin-left: 1em;
+}
+
+#usercomments {
+    min-width: 0;
+    max-width: 20vw;
+    overflow: auto;
+}
+
+#usercommments::-webkit-scrollbar {
+    height: 20px;
+}

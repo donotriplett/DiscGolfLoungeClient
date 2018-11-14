@@ -1,0 +1,24 @@
+#auth-background {
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/31/21/30/disc-1786871_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 99vw;
+    height: 94vh;
+    margin: 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    padding: 1em;
+}
+
+#auth-form {
+    width: 25vw;
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    margin-left: 72vw;
+    padding-top: 2vh;
+    color: white;
+}
+
+#submit-button {
+    margin-bottom: 2vh;
+}

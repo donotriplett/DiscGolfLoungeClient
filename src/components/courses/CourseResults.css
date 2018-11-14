@@ -1,0 +1,9 @@
+#results {
+    overflow: scroll;
+    height: 80vh;
+    list-style-image: url("../../assets/disc-golf-basket-clipart.jpg");
+}
+
+#mappedresults {
+    padding: 1em;
+}
