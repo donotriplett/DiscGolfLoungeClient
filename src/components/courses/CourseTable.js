@@ -45,7 +45,7 @@ class CourseTable extends Component {
                                                 <td>{usercourse.numberofholes}</td>
                                                 <td id="usercomments">{usercourse.comments}</td>
                                                 <td>
-                                                    <Button id={usercourse.id} onClick={this.props.delete} outline color="secondary">Delete</Button>
+                                                    <Button id={usercourse.id} className="delete-button" onClick={this.props.delete} outline color="secondary">Delete</Button>
                                                     <Button id={usercourse.id} onClick={e => this.props.update(e, usercourse)} outline color="secondary">Update</Button>
                                                 </td>
                                             </tr>

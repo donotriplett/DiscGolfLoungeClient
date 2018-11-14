@@ -11,3 +11,7 @@
 #usercommments::-webkit-scrollbar {
     height: 20px;
 }
+
+.delete-button {
+    margin-right: 1vw !important;
+}
