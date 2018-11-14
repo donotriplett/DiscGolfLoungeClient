@@ -46,7 +46,7 @@ export default class CourseCreate extends Component {
         return (
             <div>
                 <Modal isOpen={true}>
-                    <ModalHeader>Add a course you have played!</ModalHeader>
+                    <ModalHeader toggle={this.props.toggle} charCode="X" >Add a course you have played!</ModalHeader>
                     <ModalBody>
                         <Form onSubmit={this.handleSubmit} >
                             <FormGroup>

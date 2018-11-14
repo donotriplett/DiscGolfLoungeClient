@@ -65,11 +65,15 @@ export default class UserCourses extends Component {
         })
     }
 
+    toggle = () => {
+        this.setState({ updatePressed: false })
+    }
+
     render() {
         return (
             <div>
                 <CourseTable usercourses={this.state.usercourses} updateTable={this.fetchUserCourses} token={this.props.token} delete={this.userCourseDelete} update={this.setUpdatedCourses} />
-                {this.state.updatePressed ? <CourseEdit update={this.coursesUpdate} token={this.props.token} usercourses={this.state.courseToUpdate} /> : <div></div>}
+                {this.state.updatePressed ? <CourseEdit toggle={this.toggle} update={this.coursesUpdate} token={this.props.token} usercourses={this.state.courseToUpdate} /> : <div></div>}
             </div>
         )
     }

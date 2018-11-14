@@ -38,7 +38,7 @@ class CourseEdit extends Component {
         return (
             <div>
                 <Modal isOpen={true} >
-                    <ModalHeader charCode="X">Edit a course</ModalHeader>
+                    <ModalHeader toggle={this.props.toggle} charCode="X">Edit a course</ModalHeader>
                     <ModalBody>
                         <Form onSubmit={this.handleSubmit} >
                             <FormGroup>
