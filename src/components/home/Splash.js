@@ -1,5 +1,6 @@
 import React from "react";
 import { UncontrolledCarousel } from 'reactstrap';
+import "./Splash.css";
 
 const items = [
     {
@@ -30,7 +31,7 @@ const items = [
 
 const Splash = (props) => {
     return (
-        <div>
+        <div id="carousel">
             <UncontrolledCarousel items={items} />
         </div>
     )
